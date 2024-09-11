@@ -21,7 +21,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "License :: OSI Approved :: MIT License",
 ]
-dependencies = ["click", "torch", "torchvision", "deap"]
+dependencies = ["click", "torch", "torchvision", "deap", "pandas", "pyarrow"]
 
 [project.optional-dependencies]
 tests = ["pytest", "pytest-cov", "nbval", "ruff"]
