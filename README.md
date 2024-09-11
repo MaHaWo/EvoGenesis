@@ -7,11 +7,15 @@
 
 ## Installation
 
-The Python package `EvoGenesis` can be installed from PyPI:
-
-```
+The Python package `EvoGenesis` can be installed from PyPI if you publish a useable version:
+```bash
 python -m pip install EvoGenesis
 ```
+or from testPyPi if you want to experiment with things:
+```bash
+pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ EvoGenesis
+```
+which installs EvoGenesis from the test.pypi index and the dependencies to pypi.
 
 ## Development installation
 

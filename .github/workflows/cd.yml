@@ -25,7 +25,7 @@ jobs:
         python-version: "3.12"
 
     - name: Build SDist
-      run: pipx run build --sdist
+      run: pipx run build --sdist --extra-index-url https://pypi.org/simple/
 
     - uses: pypa/gh-action-pypi-publish@v1.10.1
       with:
