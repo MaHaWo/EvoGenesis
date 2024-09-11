@@ -30,7 +30,6 @@ docs = [
     "nbsphinx",
     "nbsphinx-link",
     "sphinx",
-    "sphinx-napoleon",
     "sphinx_mdinclude",
     "sphinx_rtd_theme",
     "sphinxcontrib-napoleon",
@@ -58,7 +57,4 @@ write_to = "EvoGenesis/_version.py"
 # The following is the configuration for the pytest test suite
 [tool.pytest.ini_options]
 testpaths = ["tests", "notebooks"]
-addopts = "-v -x --nbval --current-env --cov=./EvoGenesis --cov-branch --cov-report=html"
-
-[tool.coverage.run]
-omit = ["*/__init__.py/*", "docs", "tests"]
+addopts = "-v -x --nbval --current-env --cov=./EvoGenesis --cov-branch --cov-report=html ./tests"
